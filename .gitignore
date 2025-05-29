@@ -1,0 +1,190 @@
+# ================================
+# 🌍 ОС / IDE / КЕШІ
+# ================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# VS Code
+.vscode/
+.code-workspace
+
+# JetBrains (PyCharm, WebStorm, etc.)
+.idea/
+
+# =================================
+# 🐍 PYTHON / DATA SCIENCE / ML
+# =================================
+
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+ENV/
+env/
+.venv/
+.pip-wheel-metadata/
+pip-log.txt
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# PyInstaller
+dist/
+build/
+*.spec
+
+# Unit test / coverage
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+.tox/
+.nox/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Logs and local files
+*.log
+*.pot
+*.mo
+*.db
+*.sqlite3
+
+# Model / dataset files
+*.h5
+*.hdf5
+*.ckpt
+*.pb
+*.pth
+*.pt
+*.joblib
+*.npz
+*.npy
+*.csv
+*.tsv
+*.jsonl
+runs/
+
+# TensorBoard
+tensorboard/
+events.out.tfevents.*
+
+# DVC
+.dvc/
+.cache/
+*.dvc
+
+# ================================
+# 💻 NODE / JS / TS / REACT
+# ================================
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# build output
+dist/
+build/
+.next/
+out/
+.vercel/
+.svelte-kit/
+
+# testing
+coverage/
+nyc_output/
+
+# lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# environment
+.env
+.env.*
+!.env.example
+
+# ================================
+# 🐳 DOCKER / DEVOPS
+# ================================
+
+.docker/
+*.pid
+*.seed
+*.pid.lock
+docker-compose.override.yml
+
+# Kubernetes
+*.kube/
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+
+# Ansible
+*.retry
+
+# ================================
+# ⚙️ CONFIG / СЕРВІСНІ
+# ================================
+
+# Editor backup
+*.bak
+*.swp
+*.swo
+*~
+
+# Database dumps
+*.sql
+*.dump
+
+# Certificates
+*.pem
+*.crt
+*.key
+
+# Secrets (завжди обережно!)
+secrets.*
+*.key.json
+*.token
+
+# Others
+tmp/
+temp/
+.cache/
+log/
+logs/
+local_settings.py
+__pypackages__/
+
+# Cursor AI
+.cursor/
+custom_config.yaml
+
+# Project files
+project_goals.md
+style_guide.md
+custom.md
+stack.md

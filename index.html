@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Система тестування</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <!-- Вітальна секція -->
+    <section class="welcome-section">
+        <div class="container">
+            <h1 class="welcome-title">by скльопано на колінці</h1>
+            <p class="welcome-description">
+                В мене кєнт єбе ваш ПМК , достає тести з сервера . тг -@diwwmix
+            </p>
+            <div class="welcome-buttons">
+                <button id="startTest" class="btn btn-primary">Розпочати тест</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Модальне вікно налаштувань -->
+    <div id="settingsModal" class="modal">
+        <div class="modal-content">
+            <h2>Налаштування тесту</h2>
+            <form id="testSettings">
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="shuffleQuestions">
+                        Перемішати питання
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="questionsCount">Кількість питань:</label>
+                    <input type="number" id="questionsCount" min="1" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Почати</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Контейнер для тесту -->
+    <div id="testContainer" class="test-container" style="display:none;"></div>
+
+    <!-- Контейнер для результатів -->
+    <div id="resultsContainer" class="results-container" style="display:none;">
+        <h2 class="results-title">Результати тесту</h2>
+        <div class="results-score"></div>
+        <div class="mistakes-section"></div>
+        <button id="restartTest" class="btn btn-primary">Пройти тест знову</button>
+    </div>
+
+    <script src="https://unpkg.com/mammoth/mammoth.browser.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/services/documentParser.js"></script>
+    <script src="js/services/testManager.js"></script>
+    <script src="js/services/uiManager.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html> 
