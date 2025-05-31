@@ -29,14 +29,17 @@ class TestManager {
             this.questions = this.parseQuestions(result.value);
             console.log('Знайдено питань:', this.questions.length);
             
+            // Відбираємо питання з вказаного діапазону
+            const startIndex = Math.max(0, settings.startQuestion - 1);
+            const endIndex = Math.min(this.questions.length, settings.endQuestion);
+            this.questions = this.questions.slice(startIndex, endIndex);
+            
             if (settings.shuffleQuestions) {
                 this.shuffleQuestions();
             }
             // Перемішуємо відповіді для кожного питання
             this.shuffleAnswersForAllQuestions();
             
-            // Обмежуємо кількість питань
-            this.questions = this.questions.slice(0, settings.questionsCount);
             this.currentQuestionIndex = 0;
             this.mistakes = [];
             

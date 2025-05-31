@@ -50,15 +50,17 @@ class UIManager {
      */
     getSettings() {
         const shuffleQuestions = document.getElementById(CONFIG.MODAL.SHUFFLE_CHECKBOX_ID).checked;
-        const questionsCount = parseInt(document.getElementById(CONFIG.MODAL.QUESTIONS_COUNT_ID).value);
+        const startQuestion = parseInt(document.getElementById('startQuestion').value);
+        const endQuestion = parseInt(document.getElementById('endQuestion').value);
 
-        if (questionsCount < CONFIG.TEST.MIN_QUESTIONS || questionsCount > CONFIG.TEST.MAX_QUESTIONS) {
-            throw new Error(`Кількість питань має бути від ${CONFIG.TEST.MIN_QUESTIONS} до ${CONFIG.TEST.MAX_QUESTIONS}`);
+        if (startQuestion < 1 || endQuestion < startQuestion) {
+            throw new Error('Неправильний діапазон питань. Початкове питання має бути менше за кінцеве.');
         }
 
         return {
             shuffleQuestions,
-            questionsCount
+            startQuestion,
+            endQuestion
         };
     }
 

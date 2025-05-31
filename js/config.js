@@ -9,18 +9,11 @@ const CONFIG = {
     MODAL: {
         SETTINGS_ID: 'settingsModal',
         FORM_ID: 'testSettings',
-        SHUFFLE_CHECKBOX_ID: 'shuffleQuestions',
-        QUESTIONS_COUNT_ID: 'questionsCount'
+        SHUFFLE_CHECKBOX_ID: 'shuffleQuestions'
     },
     
     // Налаштування кнопок
     BUTTONS: {
         START_TEST_ID: 'startTest'
-    },
-    
-    // Налаштування тесту
-    TEST: {
-        MIN_QUESTIONS: 1,
-        MAX_QUESTIONS: 342
     }
 }; 
